@@ -23,11 +23,9 @@ for line in fin:
 
         if beginIndex < len(token):
             tokens.append(token[beginIndex:])
-            
 
 for token in tokens:
     fout.write(token + '\n')
 
 fin.close()
 fout.close()
-
