@@ -13,6 +13,8 @@ for line in fin:
 
         for currIndex, c in enumerate(token):
             if c in string.punctuation:
+                if c == '"':
+                    continue
                 if c == '.' and 0 < currIndex and token[currIndex - 1].isupper():
                     continue
 
