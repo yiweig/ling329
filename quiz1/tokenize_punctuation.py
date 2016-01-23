@@ -1,7 +1,7 @@
 import string
 
-fin = open('emory.txt')
-fout = open('emory.txt.tokenized', 'w')
+fin = open('input.txt')
+fout = open('output.txt', 'w')
 
 tokens = list()
 
