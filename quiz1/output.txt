@@ -1,12 +1,12 @@
 Hello
 world
-and
-then
-"U.S."
+"
+U.S.
+"
+
 and
 Jinho
-'
-s
+'s
 ,
 
 and
@@ -16,13 +16,26 @@ NIAID
 but
 what
 about
-"NASA"
+"
+NASA
+"
+
 or
-"N.A.S.A"
+"
+N.A.S.A
+"
+
+or
+"
+The
+quick
+brown
+fox
+"
+
 and
 NIAD
-'
-s
+'s
 !
 
 and
@@ -50,7 +63,6 @@ Report
 
 and
 Report
-'
-s
+'s
 !
 

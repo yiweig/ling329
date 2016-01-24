@@ -13,16 +13,19 @@ for line in fin:
 
         for currIndex, c in enumerate(token):
             if c in string.punctuation:
-                if c == '"' or (c == '.' and 0 < currIndex and token[currIndex - 1].isupper()):
+                if c == '.' and 0 < currIndex and token[currIndex - 1].isupper():
                     continue
 
                 if beginIndex < currIndex:
                     tokens.append(token[beginIndex:currIndex])
 
-                if c == "'" and currIndex + 2 == len(token) and token[currIndex + 1] == 's':
-                    tokens.append(token[currIndex:])
-                    beginIndex = len(token)
-                    break
+                if c == "'" and token[currIndex + 1] == 's':
+                    newEnd = currIndex + 2
+                    tokens.append(token[currIndex:newEnd])
+                    beginIndex = newEnd
+
+                    if newEnd == len(token):
+                        break
                 else:
                     tokens.append(c)
                     beginIndex = currIndex + 1
