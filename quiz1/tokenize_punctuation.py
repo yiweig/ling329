@@ -1,7 +1,7 @@
 import string
 
 fin = open('input.txt')
-fout = open('output.txt.', 'w')
+fout = open('output.txt', 'w')
 
 tokens = list()
 
