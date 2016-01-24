@@ -19,10 +19,14 @@ for line in fin:
                 if beginIndex < currIndex:
                     tokens.append(token[beginIndex:currIndex])
 
-                if c == "'" and currIndex + 2 == len(token) and token[currIndex + 1] == 's':
-                    tokens.append(token[currIndex:])
-                    beginIndex = len(token)
-                    break
+                if c == "'" and token[currIndex + 1] == 's':
+                    if currIndex + 2 == len(token):
+                        tokens.append(token[currIndex:])
+                        beginIndex = len(token)
+                        break
+                    else:
+                        tokens.append(token[currIndex:currIndex + 2])
+                        beginIndex = currIndex + 2
                 else:
                     tokens.append(c)
                     beginIndex = currIndex + 1
