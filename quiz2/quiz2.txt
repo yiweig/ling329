@@ -1,0 +1,9 @@
+(S (NP Emory University)
+   (VP is
+       (NP a private research university)
+       (PP in
+           (NP metropolitan Atlanta
+               (VP , located
+                   (PP in
+                       (NP the Druid Hills))
+                   .)))))
