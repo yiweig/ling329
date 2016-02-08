@@ -1,9 +1,12 @@
-(S (NP Emory University)
-   (VP is
-       (NP a private research university)
-       (PP in
-           (NP metropolitan Atlanta
-               (VP , located
-                   (PP in
-                       (NP the Druid Hills))
-                   .)))))
+(S
+  (NP (NNP Emory) (NNP University))
+  (VP (VBZ is)
+    (NP
+      (NP (DT a) (JJ private) (NN research) (NN university))
+      (PP (IN in)
+        (NP (JJ metropolitan) (NNP Atlanta)))
+      (, ,)
+      (VP (VBN located)
+        (PP (IN in)
+          (NP (DT the) (NNP Druid) (NNPS Hills))))))
+  (. .)))
