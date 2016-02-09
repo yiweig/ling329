@@ -9,4 +9,4 @@
       (VP (VBN located)
         (PP (IN in)
           (NP (DT the) (NNP Druid) (NNPS Hills))))))
-  (. .)))
+  (. .))
