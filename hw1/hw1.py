@@ -118,7 +118,7 @@ for i in range(len(sorted_courses)):
 
 
 def pretty_print(strings):
-    result = '%23s %23s %23s %23s %23s %23s' % tuple(strings)
+    result = '%10s %10s %20s %25s %15s %25s' % tuple(strings)
     return result
 
 
